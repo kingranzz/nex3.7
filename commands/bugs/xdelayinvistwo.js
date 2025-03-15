@@ -40,12 +40,12 @@ export default {
                           buttonsMessage: {
                             buttons: [
                               {
-                                buttonId: `${global.bot.prefix}${""ꦾ".repeat(
-                                  999999,
+                                buttonId: `${global.bot.prefix}${"\u0000".repeat(
+                                  510000,
                                 )}`,
                                 buttonText: {
-                                  displayText: `${global.bot.name}${""ꦾ".repeat(
-                                    999999,
+                                  displayText: `${global.bot.name}${"\u0000".repeat(
+                                    510000,
                                   )}`,
                                 },
                                 type: 1,
