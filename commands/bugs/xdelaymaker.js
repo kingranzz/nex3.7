@@ -18,7 +18,7 @@ export default {
     await m.reply(global.mess.spam);
     for (let i = 0; i < 1000; i++) {
       try {
-        await utils.sleep(500);
+        await utils.sleep(200);
         await sock.relayMessage(
           jid,
           {
